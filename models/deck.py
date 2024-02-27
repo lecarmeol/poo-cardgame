@@ -3,7 +3,7 @@ from models.card import RANKS, SUITS, Cards
 
 
 class Deck:
-    """Allows all cards to be shuffled and drawn at random"""
+    """Define 52 cards deck"""
 
     def __init__(self):
         self.cardlists = []
@@ -19,6 +19,5 @@ class Deck:
 
 
     def draw_card(self):
-        """Take the first card and remove it from the list
-        return the removed card"""
+        """Take the first card and remove it from the list"""
         return self.cardlists.pop()
