@@ -4,7 +4,7 @@ RANK = ['Pique', 'Coeur', 'Carreau', 'Trefle']
 
 
 class Cards:
-    """Allows all cards to be shuffled and drawn at random"""
+    """A standard card, defined by a suit and rank"""
     def __init__(self, suit, rank):
 
         self.suit = suit
