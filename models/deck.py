@@ -1,5 +1,5 @@
 import random
-from models.card import RANKS, SUITS, Cards
+from models.card import RANKS, SUITS, Card
 
 
 class Deck:
@@ -9,7 +9,7 @@ class Deck:
         self.cardlists = []
         for rank in RANKS:
             for suit in SUITS:
-                card = Cards(suit, rank)
+                card = Card(suit, rank)
                 self.cardlists.append(card)
         self.shuffle()
 

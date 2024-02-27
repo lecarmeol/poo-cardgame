@@ -1,14 +1,14 @@
 """Entry point."""
 
 from models.deck import Deck
-from controllers.base import Controller
-from views.base import View
+from controllers.Dealer import Dealer
+from views.View import View
 
 
 def main():
     deck = Deck()
     view = View()
-    game = Controller(deck, view)
+    game = Dealer(deck, view)
     game.run()
 
 
