@@ -25,7 +25,7 @@ class View:
         def prompt_for_new_game(self):
                 """New game or not"""
                 new_game = None
-                while new_game is not REPLY :
+                while new_game is not REPLY:
                         new_game = input("New Game ? [Y/N]")
                 return new_game
 

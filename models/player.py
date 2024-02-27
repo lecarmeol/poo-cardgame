@@ -1,7 +1,8 @@
 
 class Player:
 
-    """Enters player name and cards in hand"""
-    def __init__(self):
-        self.name = ''
+    """Define a player with a name and cards
+    attribute : name (string)"""
+    def __init__(self, name):
+        self.name = name
         self.cards = []

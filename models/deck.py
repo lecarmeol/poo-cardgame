@@ -1,5 +1,5 @@
 import random
-from models.card import RANK, SUITS, Cards
+from models.card import RANKS, SUITS, Cards
 
 
 class Deck:
@@ -7,7 +7,7 @@ class Deck:
 
     def __init__(self):
         self.cardlists = []
-        for rank in RANK:
+        for rank in RANKS:
             for suit in SUITS:
                 card = Cards(suit, rank)
                 self.cardlists.append(card)
@@ -19,5 +19,6 @@ class Deck:
 
 
     def draw_card(self):
-        """Take the first card and remove it from the list"""
+        """Take the first card and remove it from the list
+        return the removed card"""
         return self.cardlists.pop()
