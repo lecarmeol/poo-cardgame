@@ -1,7 +1,12 @@
 REPLY = ["Y", "y", "Yes", "YES", "N", "n", "No", "NO"]
 class View:
         """Interface for a Cardgame"""
-        def prompt_number_of_player(self):
+        def prompt_number_of_player(self, max_nb_player):
+                """Choose number of player"""
+                number_of_player = -1
+                while number_of_player == -1 or number_of_player > max_nb_player :
+                        number_of_player = int(input("Choose number of player (" + str(max_nb_player) + "max) :"))
+                return number_of_player
 
         def prompt_for_player(self):
                 """Name of player"""
